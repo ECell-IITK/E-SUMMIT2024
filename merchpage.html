@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Merch Page</title>
+  <style>.main{
+    display: flex;
+
+}
+.left{
+    height: 100vh;
+    width: 30%;
+    background-color: white;
+}
+
+.right{
+    width: 70%;
+    height: 100vh;
+    background-color: black;
+}
+
+.circle{
+    top:20%;
+    left: 16%;
+    height: 55%;
+    width: 28%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+}
+
+#three{
+    position: relative;
+    top: -10%;
+    left: -8%;
+    height: 65vh;
+    width: 65vh;
+    margin: 10px 10px;
+}
+
+.text{
+    position: relative;
+    top: 15%;
+    left: 20%;
+    height: 70vh;
+    padding: 20px;
+}
+.text *{
+    color: white;
+}
+.button{
+    height: 40px;
+    width: 150px;
+    font-size: large;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}</style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+    
+        </div>
+        <div class="circle">
+            <model-viewer id="three" src="./model/shirt-ohnestand.glb" autoplay camera-controls disable-zoom auto-rotate  shadow-intensity="1">
+        
+            </model-viewer>
+        
+        
+            <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+        </div>
+        <div class="right">
+            <div class="text">
+
+                <h1>HEADING </h1>
+                <p>DESCRIPTION</p>
+                <button class="button">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
