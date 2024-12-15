@@ -5,6 +5,13 @@
   overflow-y: auto; /* Enable vertical scrolling inside the container */
   position: relative;
   background-color: white;
+  overflow-x: hidden;
+
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+} /* Hide scrollbar for WebKit-based browsers (Chrome, Safari) */
+#services::-webkit-scrollbar {
+  display: none;
 }
 
 /* Card container styling */

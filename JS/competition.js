@@ -23,7 +23,7 @@ function initializeButtons(sections) {
     button.id = `button-${index + 1}`;
     button.innerHTML = `
       <img src="./images/competition_main/${section.image}" alt="${section.button}" class="button-icon">
-      <span>${section.button}</span>
+      
     `;
     button.addEventListener('click', () => {
       displayContent(screen, description, section);
