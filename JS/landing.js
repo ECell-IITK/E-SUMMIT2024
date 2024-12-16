@@ -37,7 +37,7 @@ function controlVisibility() {
         LayerSecond.src = "./images/2024_landing/Layer2_sm.svg";
         LayerThird.src = "./images/2024_landing/Layer3_sm.svg";
         RegisterL.classList.remove("d-none");
-
+        
         
 
     } else if (window.innerWidth >= 500) {

@@ -31,7 +31,9 @@ landing_page
  #landing_page #Layer3{ 
  }
 
-
+ #LayerT{
+    top: 20%;
+}
 
 .images-section{
     position: absolute;
@@ -96,6 +98,10 @@ landing_page
         }
         
     #Layer3{
+    }
+    #LayerT{
+        top: auto;
+        bottom: 20%;
     }
 
 .images-section{
