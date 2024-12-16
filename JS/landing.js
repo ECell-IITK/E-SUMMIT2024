@@ -105,18 +105,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const RegisterL = document.getElementById("Reg_lg");
     const RegisterS = document.getElementById("Reg_sm");
 
-    function updateLayers(isSmallScreen) {
-        if (LayerWater) LayerWater.src = isSmallScreen ? "../images/2024_landing/Layerw_sm.svg" : "../images/2024_landing/Layerw.svg";
-        if (LayerFirst) LayerFirst.src = isSmallScreen ? "../images/2024_landing/Layer1_sm.svg" : "../images/2024_landing/Layer1.svg";
-        if (LayerSecond) LayerSecond.src = isSmallScreen ? "../images/2024_landing/Layer2_sm.svg" : "../images/2024_landing/Layer2.svg";
-        if (LayerThird) LayerThird.src = isSmallScreen ? "../images/2024_landing/Layer3_sm.svg" : "../images/2024_landing/Layer3.svg";
-    }
+    
+    
 
     function controlVisibility() {
-        const isSmallScreen = window.innerWidth < 500;
-        updateLayers(isSmallScreen);
+        const isSmallScreen = window.innerWidth ;
+        updateLayers(isSmallScreen < 500);
         if (RegisterL) RegisterL.classList.toggle("d-none", !isSmallScreen);
         if (RegisterS) RegisterS.classList.toggle("d-none", isSmallScreen);
+
+        function updateLayers(isSmallScreen) {
+            if (LayerWater) LayerWater.src = isSmallScreen < 500? "../images/2024_landing/Layerw_sm.svg" : "../images/2024_landing/Layerw.svg";
+            if (LayerFirst) LayerFirst.src = isSmallScreen < 500 ? "../images/2024_landing/Layer1_sm.svg" : "../images/2024_landing/Layer1.svg";
+            if (LayerSecond) LayerSecond.src = isSmallScreen < 500 ? "../images/2024_landing/Layer2_sm.svg" : "../images/2024_landing/Layer2.svg";
+            if (LayerThird) LayerThird.src = isSmallScreen < 500 ? "../images/2024_landing/Layer3_sm.svg" : "../images/2024_landing/Layer3.svg";
+        }
     }
 
     window.addEventListener('load', controlVisibility);
