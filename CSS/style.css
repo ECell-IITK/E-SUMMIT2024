@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 /* Global Styles */
 
 
@@ -29,6 +30,8 @@
   --font-primary3:"Cinzel", serif;  /* Primary font for most content */
     --font-primary3:"Poppins", sans-serif;
     --primary-text1: 'Kompagnia';
+    --font-montserrat:"Montserrat", sans-serif;
+
 
   ;  /* Primary font for most content */
   --font-secondary1:"Open Sans", sans-serif;
@@ -43,6 +46,7 @@
   --font-size-large: 1.5rem;   /* Large text (e.g., main headings) */
   --font-size-xl: 2rem;        /* Extra-large text (e.g., hero section) */
   --font-size-xxl: 3rem;       /* Extra-extra-large text (e.g., banners) */
+  --font-size-xxxl: 4rem;      
 
   /* Font Weights */
   --font-weight-light: 300;    /* Light text */
@@ -137,6 +141,7 @@ h1{
 h2{
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
+    font-family: var(--font-montserrat);
 }
 h3{
     font-size: var(--font-size-medium);
@@ -155,7 +160,7 @@ p{
 @media screen and (min-width:800px) {
     
     h1{
-        font-size: var(--font-size-xxl);
+        font-size: var(--font-size-xxxl);
         font-weight: var(--font-weight-regular);
         color: var(--clr-grey-1);
         font-family: var(--primary-text1);
@@ -196,7 +201,8 @@ nav bar
 ==========
  */
 nav ul li a{
-    font-size: 1.125rem;
+    font-size: 2rem;
+    font-weight: var(--font-size-medium);
     color: red;
 }
 

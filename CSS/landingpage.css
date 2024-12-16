@@ -6,7 +6,6 @@ landing_page
 ==========
  */
  #landing_page{
-    border: 3px solid yellow;
     position: relative;
     min-height:115vh;
     display: flex;
@@ -21,7 +20,6 @@ landing_page
  .images-section #Layerw{
     /* position: absolute; */
     /* top: 86%; */
-    border: 5px solid red;
 }
  #landing_page img{
     

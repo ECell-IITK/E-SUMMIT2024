@@ -47,7 +47,7 @@
   border-radius: inherit;
   padding: 7px; /* Adjust padding for border thickness */
   /* background: conic-gradient(from 360deg at 50% 50%, #F714D7 0deg, #7C1866 180deg);; */
-  background-color: white;
+  background-color: black;
   -webkit-mask: 
       linear-gradient(#fff 0 0) content-box, 
       linear-gradient(#fff 0 0);

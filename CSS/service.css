@@ -4,7 +4,7 @@
   height: 100vh; /* Height of the viewport */
   overflow-y: auto; /* Enable vertical scrolling inside the container */
   position: relative;
-  background-color: white;
+  background-color: transparent;
   overflow-x: hidden;
 
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
