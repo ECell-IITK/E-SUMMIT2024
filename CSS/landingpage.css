@@ -18,8 +18,7 @@ landing_page
 
 
  .images-section #Layerw{
-    /* position: absolute; */
-    /* top: 86%; */
+
 }
  #landing_page img{
     
@@ -27,21 +26,12 @@ landing_page
     width: 100%;
     pointer-events: none;
  }
- /* #landing_page #Layer4 { 
-    animation: scroll 7s infinite;
- } */
+
 
  #landing_page #Layer3{ 
-    /* scale: ; */
  }
 
 
-
-/* @keyframes scroll {
-     0% { left:-100%; } 
-     50% { left: 100%; } 
-     100% { left: 200%;;  }
-} */
 
 .images-section{
     position: absolute;

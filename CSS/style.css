@@ -232,7 +232,7 @@ nav ul li a{
         color: #333;
         padding: 2rem;
     }
-.btn{
+.btn{   
     display: inline-block;
     padding: 0.375rem 0.75rem;
     background-color: var(--clr-grey-10);
