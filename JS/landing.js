@@ -1,39 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const landingPage = document.querySelector("#landing_page");
-    const scrollSlide = document.querySelector("#scroll-slide");
-    const images_section = document.querySelector(".images-section");
+document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger)
 
-    // Apply perspective to the parent container
-    scrollSlide.style.perspective = "2000px";
+    gsap.set('#landing_page', {
+        clipPath: 'polygon(14% 0%, 80% 0%, 95% 90%, 2% 100%)',
+        borderRadius : '0 0 40% 10%'
+    })
 
-    // Listen for scroll events
-    window.addEventListener("scroll", () => {
-        // Get the bounding rectangle of the landing page
-        const rect = landingPage.getBoundingClientRect();
+    gsap.from('#landing_page', {
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        borderRadius: '0 0 0 0',
+        ease : 'power1.inOut',
+        markers :'true',
+        scrollTrigger : {
+            trigger: '#landing_page',
+            start: '40% center',
+            end: 'bottom 10%',
+            scrub: 'true'
 
-        // Calculate the viewport height and the element's position
-        const viewportHeight = window.innerHeight;
-        console.log(viewportHeight);
-        const elementBottom = rect.bottom - 100;
-        console.log(elementBottom);
-
-        // Check if the bottom of the landing page is within the viewport
-        if (elementBottom < viewportHeight && elementBottom > 0) {
-            // Calculate rotation based on the scroll position
-            const progress = 1 - elementBottom / viewportHeight; // Normalize scroll progress (0 to 1)
-            const rotationX = 20 * progress; // Maximum tilt of 20 degrees
-            const moveY = 10 * progress;
-
-            // Apply transformations
-            landingPage.style.transform = `rotateX(${rotationX}deg) translateY(${moveY}px)`;
-            landingPage.style.transformOrigin = "center bottom";
-
-            // Reset any transformations applied to images_section
-            images_section.style.transform = `rotate(0deg)`;
-        } else {
-            // Reset transformations when out of range
-            landingPage.style.transform = "rotateX(0deg)";
-            landingPage.style.transformOrigin = "center bottom"; // Ensuring transform origin is always set
         }
+    })
     });
-});
