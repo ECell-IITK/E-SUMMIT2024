@@ -17,7 +17,6 @@ Competition
 }
 
 #competition .buttonContainer{
-  border: 1px solid red;
 }
 
 
@@ -34,7 +33,7 @@ Competition
 
 .competition_image{
   flex: 1;
-  height: 49%;
+  /* height: 49%; */
   object-fit: cover;
   display: flex;
   align-items: center;
@@ -46,7 +45,6 @@ Competition
 }
 #screen{
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
- 
 
 }
 
@@ -125,10 +123,11 @@ align-items: center;
     border-radius: 8px; /* Optional: Rounded corners */
     cursor: pointer;
     text-align: center;
-    font-size: 0.9rem; /* Adjust text size */
     transition: background-color 0.3s ease;
   }
-  
+  .dynamic-button {
+    background-size: cover;
+  }
   /* Add hover effect to buttons */
   .dynamic-button:hover {
     background-color: #9c0894;
@@ -189,4 +188,8 @@ align-items: center;
 .realistic-button:hover {
     background: linear-gradient(145deg, #e6e6e6, #cccccc);
     box-shadow: 4px 4px 10px #b3b3b3, -4px -4px 10px #ffffff;
+}
+
+#competition button{
+  padding: 0;
 }
