@@ -23,7 +23,6 @@
 
 
 const LayerWater = document.querySelector("#Layerw");
-
 const LayerFirst = document.querySelector("#Layer1");
 const LayerSecond = document.querySelector("#Layer2");
 const LayerThird = document.querySelector("#Layer3");
@@ -31,13 +30,12 @@ const RegisterL = document.getElementById("Reg_lg");
 const RegisterS = document.getElementById("Reg_sm");
 
 
-const timer = document.getElementById('days');
 function controlVisibility() {
     if (window.innerWidth < 500) {
-        LayerWater.src = "../images/2024_landing/Layerw_sm.svg";
-        LayerFirst.src = "../images/2024_landing/Layer1_sm.svg";
-        LayerSecond.src = "../images/2024_landing/Layer2_sm.svg";
-        LayerThird.src = "../images/2024_landing/Layer3_sm.svg";
+        LayerWater.src = "./images/2024_landing/Layerw_sm.svg";
+        LayerFirst.src = "./images/2024_landing/Layer1_sm.svg";
+        LayerSecond.src = "./images/2024_landing/Layer2_sm.svg";
+        LayerThird.src = "./images/2024_landing/Layer3_sm.svg";
         RegisterL.classList.remove("d-none");
 
         
