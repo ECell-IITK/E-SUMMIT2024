@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger)
 
     gsap.set('#landing_page', {
-        clipPath: 'polygon(14% 0%, 80% 0%, 95% 90%, 2% 100%)',
+        clipPath: 'polygon(14% 0%, 80% 0%, 95% 85%, 2% 100%)',
         borderRadius : '0 0 40% 10%'
     })
 
