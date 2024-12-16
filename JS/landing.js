@@ -28,22 +28,41 @@ const LayerWater = document.querySelector("#Layerw");
 const LayerFirst = document.querySelector("#Layer1");
 const LayerSecond = document.querySelector("#Layer2");
 const LayerThird = document.querySelector("#Layer3");
-
+const RegisterL = document.getElementById("Reg_lg");
+const RegisterS = document.getElementById("Reg_sm");
 
 
 const timer = document.getElementById('days');
-function updateImageSource() {
+function controlVisibility() {
     if (window.innerWidth < 500) {
         LayerWater.src = "../images/2024_landing/Layerw_sm.svg";
-        // LayerWater.style.border = "1px solid blue";
         LayerFirst.src = "../images/2024_landing/Layer1_sm.svg";
         LayerSecond.src = "../images/2024_landing/Layer2_sm.svg";
         LayerThird.src = "../images/2024_landing/Layer3_sm.svg";
+        RegisterL.classList.remove("d-none");
+
         
 
-    } else {
-        responsiveImage.src = "../images/2024_landing/Layerw.svg"; 
+    } else if (window.innerWidth >= 500) {
+        RegisterS.classList.remove("d-none");
 
     }
 }
-updateImageSource()
+window.addEventListener('load', controlVisibility);
+window.addEventListener('resize', controlVisibility);
+
+
+// sorting the navbar icon
+
+document.getElementById('navbar-icon-toggler').addEventListener('click', function() {
+    var icon = this; 
+    
+    if (icon.classList.contains('bi-list')) {
+        icon.classList.add('bi-x');
+        icon.classList.remove('bi-list');
+        icon.style.background = 'transparent'; 
+    } else {
+        icon.classList.remove('bi-x');
+        icon.classList.add('bi-list'); 
+    }
+});
