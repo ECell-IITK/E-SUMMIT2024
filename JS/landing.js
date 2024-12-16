@@ -21,7 +21,6 @@
 //     })
 //     });
 
-Dynamicall changing the image of the water layer
 
 const LayerWater = document.querySelector("#Layerw");
 
@@ -50,21 +49,3 @@ function controlVisibility() {
 }
 window.addEventListener('load', controlVisibility);
 window.addEventListener('resize', controlVisibility);
-
-
-// sorting the navbar icon
-
-document.getElementById('navbar-icon-toggler').addEventListener('click', function() {
-    var icon = this; 
-    
-    if (icon.classList.contains('bi-list')) {
-        icon.classList.add('bi-x');
-        icon.classList.remove('bi-list');
-        icon.style.background = 'transparent'; 
-    } else {
-        icon.classList.remove('bi-x');
-        icon.classList.add('bi-list'); 
-    }
-});
-
-
