@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         markers :'true',
         scrollTrigger : {
             trigger: '#landing_page',
-            start: '40% center',
-            end: 'bottom 10%',
+            start: 'center center',
+            end: 'bottom center',
             scrub: 'true'
 
         }
