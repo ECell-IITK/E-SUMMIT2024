@@ -130,9 +130,9 @@ h4{
     margin-bottom:1rem;
 }
 h1{
-    font-size: var(--primary-text1);
+    font-size: var(--font-size-xl);
     font-weight: var(--font-weight-medium);
-    font-family: var(--font-primary1);
+    font-family: var(--primary-text1);
     color: var(--clr-grey-1);
 
 }
