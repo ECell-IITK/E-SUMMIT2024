@@ -255,25 +255,14 @@ nav ul li a{
     clear: both;
     display: table;
 }
-.section-title h3{
-    font-family: var(--ff-secondary);
-    color: var(--clr-grey-5);
-}
-.section-title{
-    background-color: rgb(18, 151, 43);
-    margin-bottom: 2rem;
-}
-.section-center{
-    padding: 4rem ;
-    width: 85vw;
-    margin: 0 auto;
-    max-width: 1170px;
-}
+
+
+
 @media screen and (min-width:992px) {
-    .section-center{
-        width: 92vw;
-        padding: 4rem 1rem;
+    section{
+        padding-top: 4rem;
     }
+    
 }
 /*
 Animation
