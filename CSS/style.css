@@ -328,6 +328,7 @@ ABOUT
     /* background-color: transparent; */
     position: relative;
     background-color: transparent;
+    padding : 0.85rem 0 !important;
     
     
  }
@@ -337,7 +338,16 @@ ABOUT
  .about_card_img-2{
     border: 1ps solid red;
  }
+ .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
  .video-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .background-image-div { 
         float: left;
       width:auto;
@@ -356,12 +366,13 @@ ABOUT
         float:left; 
         position: relative; 
         margin:15px 0;
+        width: 85%;
     }
     #block1, #block2, #block3, #block4 {
         position:absolute; 
         top:0; 
-        width:23.5%; 
-        height:85%; 
+        width:23%; 
+        height:90%; 
         color: #FFF; 
         text-shadow: 1px 1px 2px #000; 
         display: flex; 
@@ -372,10 +383,10 @@ ABOUT
     }
     #block1 {
         left:0;
-        top:15%;
+        top:10%;
     }
     #block2 {left:25%;}
-    #block3 {left:50%;top: 15%;}
+    #block3 {left:50%;top: 10%;}
     #block4 {left:75%;}
     #block1:hover .coverImg, #block2:hover .coverImg, #block3:hover .coverImg, #block4:hover .coverImg {
         display: flex; 
