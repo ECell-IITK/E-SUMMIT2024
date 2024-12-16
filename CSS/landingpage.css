@@ -95,13 +95,12 @@ landing_page
         position: relative;
      }
     
-    
-        #Layerw{
-            bottom: 0;
-            border:  2px solid yellow;
-            transform:scaleY(1.3);
+    #Layerw{
+        bottom: 0;
         }
         
+    #Layer3{
+    }
 
 .images-section{
     position: absolute;
