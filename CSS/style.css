@@ -220,6 +220,10 @@ nav ul li a{
 
 
 /* more Global Css */
+
+
+
+
 #fixed_section {
     position: fixed; /* Becomes sticky when it reaches the top */
     top: 0; /* Sticks to the top of the viewport */
@@ -229,6 +233,7 @@ nav ul li a{
     width: 100%;
     /* background-image: url(../images/workshop_background.svg); */
 }
+
 #scroll_slide
      {
        
