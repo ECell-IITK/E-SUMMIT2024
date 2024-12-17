@@ -33,7 +33,10 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   height: 70vh;
-  /* background-image: url(../images/About_1.svg); */
+  background-image: url(../images/About_1.svg);
+  border: none;
+  background-position: center;
+
 
 
 }
@@ -51,9 +54,10 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     height: 50vh;
-    /* background-image: url(../images/About_1.svg); */
+    background-image: url(../images/About_1.svg);
   
-  
+    border: none;
+
   }
   
 }
