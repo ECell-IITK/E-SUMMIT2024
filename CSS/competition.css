@@ -24,17 +24,17 @@ Competition
 
 
 .competition_card_container{
-  padding: 2px;
+  padding-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
-  height: 50vh; 
+  height: auto;
   overflow-x: hidden;
 }
 
 .competition_image{
   flex: 1;
-  /* height: 49%; */
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,8 +77,8 @@ background-repeat: no-repeat;"> */
 
 .competition_image img{
  
-  width: 50%;
-  height: 50%;
+  width: auto;
+  height: auto;
 
     
 }
@@ -86,7 +86,7 @@ background-repeat: no-repeat;"> */
 
 .competition_description{
 flex: 1;
-height: 49;
+/* height:min-content; */
 display: flex;
 justify-content: center;
 flex-direction: column;
