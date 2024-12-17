@@ -9,12 +9,12 @@ workshops
     height: 98vh;
     overflow: hidden;
     padding-bottom: 2rem;
+    position: relative;
 
  }
 
 
  .workshop_heading{
-    position: relative;
 
  }
 
@@ -26,7 +26,13 @@ workshops
     transition-delay: 300ms;
 
  }
+.w_button_position{
+   position: absolute;
+   left: 50%;
+   bottom: 25%;
+   transform: translate(-50%, -50%);
 
+}
 
  .carousel{
     padding-top: 2rem;
@@ -96,6 +102,15 @@ workshops
     height: 80vh;
 
  }
+
+
+ .w_button_position{
+   position: absolute;
+   left: 50%;
+   bottom: 10%;
+   transform: translate(-50%, -50%);
+
+}
  .controls{
     position: absolute;
     top: 15%;

@@ -69,7 +69,8 @@
     border-radius: 8px;
     height: 50vh;
     background-image: url(../images/About_1.svg);
-  
+    padding: 0.25rem 1.5rem;
+
     border: none;
 
   }
