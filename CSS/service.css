@@ -24,22 +24,22 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
   padding: 16px;
-  gap: 10%;
+  gap: 5%;
 }
 .service-grid-item {
-  
   background-color: transparent;
   text-align: center;
-  /* border: 1px solid #ddd; */
   border-radius: 8px;
-  height: 60vh;
+  height: 70vh;
   background-image: url(../images/About_1.svg);
-  border: none;
+  background-size: cover;
+  /* border: none; */
   background-position: center;
   position: relative;
-
-
-
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .service-grid-item::after{
