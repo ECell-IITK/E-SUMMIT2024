@@ -22,7 +22,7 @@ function initializeButtons(sections) {
     button.setAttribute('data-target', index + 1);
     button.id = `button-${index + 1}`;
     button.innerHTML = `
-      <img src="./images/competition_main/${section.image}" alt="${section.button}" class="button-icon">
+      <img src="./images/competition_main/${section.image}" style="padding:0.5rem" alt="${section.button}" class="button-icon">
       
     `;
     button.addEventListener('click', () => {
