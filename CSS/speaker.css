@@ -21,6 +21,13 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    #speakers .speaker_p{
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+    
 }
 
 .main-page-speaker-section-content {

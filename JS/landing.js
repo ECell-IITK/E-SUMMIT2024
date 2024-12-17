@@ -44,7 +44,7 @@ function controlVisibility() {
         LayerFirst.src = "./images/2024_landing/Layer1.svg";
         LayerSecond.src = "./images/2024_landing/Layer2.svg";
         LayerThird.src = "./images/2024_landing/Layer3.svg";
-        Train.src = "./images/2024_landing/LayerT.gif";
+        Train.src = "./images/2024_landing/LayerT.svg";
 
     }
 }
