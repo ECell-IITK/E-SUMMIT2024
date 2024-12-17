@@ -1,8 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const cardContainers = document.querySelector(".card_container");
-    const card = cardContainers.querySelector(".cardM");
+// Defining the DOM model
+  const cardContainers1 = document.querySelector(".card_container1");
+  const card = cardContainers1.querySelector(".cardM");
+
+
+
+  const isWideScreen = window.innerWidth > 768;
+
+
+  if (isWideScreen) {
+    
 
     gsap.fromTo(
       card,
@@ -24,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         x: "0vw",
         y: "0vh",
         scrollTrigger: {
-          trigger: cardContainers,
+          trigger: cardContainers1,
           scroller: "#services", 
           start: "center center",   
           end: "bottom center",   
@@ -33,4 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     );
+  } else {
+    cardContainers1.style.display = "none";
+
+
+
+    
+  }
+ 
 });

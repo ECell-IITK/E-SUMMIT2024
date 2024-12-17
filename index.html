@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./CSS/variables.css">git
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/speaker.css">
+    <link rel="stylesheet" href="./CSS/workshops.css">
     <!-- <link rel="stylesheet" href="./CSS/service.css"> -->
     <link rel="stylesheet" href="./CSS/service.css">
     <!-- <link rel="stylesheet" href="./CSS/train.css"> -->
@@ -266,8 +267,18 @@
   
     <section id="services" >
       <h1>Services</h1>
-      <div class="card_container">
-        <div class="cardL ">
+      <div class="container">
+        <div class="card_container1 service-grid-container ">
+          <div class="cardL service-grid-item ">
+            <div class="card bg-transparent" style="width: 100%; height: 100%;">
+              <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: stretch; height: 100%;">
+                <!-- <h5 class="card-title" style="margin: 0;">Card title</h5> -->
+                <p class="card-text" style="margin: 0;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary" style="align-self: center;">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        <div class="cardM service-grid-item">
           <div class="card bg-transparent" style="width: 100%; height: 100%;">
             <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: stretch; height: 100%;">
               <!-- <h5 class="card-title" style="margin: 0;">Card title</h5> -->
@@ -276,7 +287,7 @@
             </div>
           </div>
         </div>
-      <div class="cardM ">
+      <div class="cardR  service-grid-item">
         <div class="card bg-transparent" style="width: 100%; height: 100%;">
           <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: stretch; height: 100%;">
             <!-- <h5 class="card-title" style="margin: 0;">Card title</h5> -->
@@ -285,16 +296,16 @@
           </div>
         </div>
       </div>
-    <div class="cardR ">
-      <div class="card bg-transparent" style="width: 100%; height: 100%;">
-        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: stretch; height: 100%;">
-          <!-- <h5 class="card-title" style="margin: 0;">Card title</h5> -->
-          <p class="card-text" style="margin: 0;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary" style="align-self: center;">Go somewhere</a>
         </div>
       </div>
-    </div>
-    </div>
+        <!-- <div class="container">
+
+        <div class="card_container2">
+          <div class="cardT"></div>
+          <div class="cardC"></div>
+          <div class="cardB"></div>
+        </div>
+      </div> -->
     </section>
     
 
@@ -326,23 +337,119 @@
 
     <!-- Workshop -->
   
-     <section id="workshops">
-        <h1>Workshops</h2>
-        <div class="logos">
-          <div class="logos-slide">
-            <a href="https://www.3m.com/" target="_blank"><img src="./images/logos/3m.svg" alt="3M" /></a>
-            <a href="https://www.barstoolsports.com/store" target="_blank"><img src="./images/logos/barstool-store.svg" alt="Barstool Store" /></a>
-            <a href="https://www.budweiser.com/" target="_blank"><img src="./images/logos/budweiser.svg" alt="Budweiser" /></a>
-            <a href="https://www.google.com/" target="_blank"><img src="./images/logos/buzzfeed.svg" alt="BuzzFeed" /></a>
-            <a href="https://www.forbes.com/" target="_blank"><img src="./images/logos/forbes.svg" alt="Forbes" /></a>
-            <a href="https://www.macys.com/" target="_blank"><img src="./images/logos/macys.svg" alt="Macy's" /></a>
-            <a href="https://www.menshealth.com/" target="_blank"><img src="./images/logos/menshealth.svg" alt="Men's Health" /></a>
-            <a href="https://shop.mrbeast.com/" target="_blank"><img src="./images/logos/mrbeast.svg" alt="MrBeast" /></a>
+
+    <!-- Workshop -->
+     <section id="workshops"> <!-- TODO -->
+        <div class=" workshop_heading"><h1>Workshops</h1>
+          <button class="btn btn-primary">Read More</button>
+        </div>
+        <button>Read More</button>
+      <div class="container"  >
+        <div class="carousel" >
+          <div class="carousel-container" style="--quantity : 11;">
+            
+            <div class="items current" style="--position : 1">
+              <img src="./images/workshop/logo-placeholder-1.webp">
+            </div>
+            <div class="items" style="--position : 2">
+              <img src="./images/workshop/logo-placeholder-2.png">
+            </div>
+            <div class="items" style="--position : 3">
+              <img src="./images/workshop/logo-placeholder-1.webp">
+            </div>
+            <div class="items" style="--position : 4">
+              <img src="./images/workshop/logo-placeholder-2.png">
+            </div>
+            <div class="items" style="--position : 5">
+              <img src="./images/workshop/logo-placeholder-1.webp">
+            </div>
+            <div class="items" style="--position : 6">
+              <img src="./images/workshop/logo-placeholder-2.png">
+            </div>
+            <div class="items" style="--position : 7">
+              <img src="./images/workshop/logo-placeholder-1.webp">
+            </div>
+            <div class="items" style="--position : 8">
+              <img src="./images/workshop/logo-placeholder-2.png">
+            </div>
+            <div class="items" style="--position : 9">
+              <img src="./images/workshop/logo-placeholder-1.webp">
+            </div>
+            <div class="items" style="--position : 10">
+              <img src="./images/workshop/logo-placeholder-2.png">
+            </div>
+            <div class="items" style="--position : 11">
+              <img src="./images/workshop/logo-placeholder-1.webp">
+            </div>
+            
+
+              <!-- next button -->
+            
+        </div>
+        <div class="controls">
+              
+          <div class="prev">
+            <i class="fas fa-chevron-left"></i>
+
+          </div>
+          <div class="next">
+            <i class="fas fa-chevron-right"></i>
           </div>
         </div>
-
+        </div>
+        <div class="carousel-container2">
+          <div class="carousel2">
+            <div class="carousel-card" onclick="navigateTo('page1.html')">
+              <img src="https://th.bing.com/th/id/R.2d5f600f952e0388aede88984ea738aa?rik=fKLX3cPTrvsP9A&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fphotos%2f16900000%2fbeautiful-nature-random-16905868-1024-768.jpg&ehk=%2b7qBaRvZRy58oJbsp594Pm5vBaB5rxPgyF1ZHTt3fi4%3d&risl=&pid=ImgRaw&r=0" alt="Nature 1">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page2.html')">
+              <img src="https://th.bing.com/th/id/R.2d5f600f952e0388aede88984ea738aa?rik=fKLX3cPTrvsP9A&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fphotos%2f16900000%2fbeautiful-nature-random-16905868-1024-768.jpg&ehk=%2b7qBaRvZRy58oJbsp594Pm5vBaB5rxPgyF1ZHTt3fi4%3d&risl=&pid=ImgRaw&r=0" alt="Nature 2">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page3.html')">
+              <img src="https://th.bing.com/th/id/R.a245169d5147438cd3ee3baf4a3ab9c1?rik=NH8VHb%2b6WlPERg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1531804055935-76f44d7c3621%3fixlib%3drb-1.2.1%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9&ehk=ORY7mIUuKTh7LC0ogpC%2bYVpVuUvA5FKfA04igKJbY2A%3d&risl=&pid=ImgRaw&r=0" alt="Nature 3">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page4.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,4" alt="Nature 4">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page5.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,5" alt="Nature 5">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page6.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,6" alt="Nature 6">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page7.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,7" alt="Nature 7">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page8.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,8" alt="Nature 8">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page9.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,9" alt="Nature 9">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page10.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,10" alt="Nature 10">
+            </div>
       
-        
+            <!-- Duplicate cards for seamless infinite scrolling -->
+            <div class="carousel-card" onclick="navigateTo('page1.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,1" alt="Nature 1">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page2.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,2" alt="Nature 2">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page3.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,3" alt="Nature 3">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page4.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,4" alt="Nature 4">
+            </div>
+            <div class="carousel-card" onclick="navigateTo('page5.html')">
+              <img src="https://source.unsplash.com/random/800x400?nature,5" alt="Nature 5">
+            </div>
+          </div>
+        </div>
+      
+      </div>
      </section>
 
     <!-- Past Speakers -->
@@ -496,7 +603,7 @@
 <!-- Gsap Animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="./gsap/services.js"></script>
-    <script src="./gsap/animation.js"></script>
+    <!-- <script src="./gsap/services.js"></script> -->
+    <!-- <script src="./gsap/animation.js"></script> -->
 </body>
 </html>

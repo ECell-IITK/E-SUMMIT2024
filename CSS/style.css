@@ -201,7 +201,6 @@ nav bar
 nav ul li a{
     font-size: 2rem;
     font-weight: var(--font-size-medium);
-    color: red;
 }
 
 
@@ -255,7 +254,7 @@ nav ul li a{
 
 @media screen and (min-width:992px) {
     section{
-        padding-top: 4rem;
+        /* padding-top: 4rem; */
     }
     
 }
@@ -324,7 +323,6 @@ ABOUT
     position: relative; display: inline-block; overflow: hidden; border: 1px solid #ddd; transition: opacity 0.3s ease;
  }
  .about_card_img-2{
-    border: 1ps solid red;
  }
  .video-card{
     .background-image-div { 
@@ -513,131 +511,6 @@ CONTACT
 
 /* 
 ==========
-workshops
-==========
- */
- 
-/* 
-@keyframes slide {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.logos {
-  overflow: hidden;
-  padding: 60px 0;
-  background: white;
-  white-space: nowrap;
-  position: relative;
-  display: flex ;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-
-
-
-
-.logos:hover .logos-slide {
-}
-
-.logos-slide {
-    border: 2px solid red;
-  display: flex;
-  width: 100%;
-  gap: 5%;
-  animation: 20s slide infinite linear;
-
-}
-
-.logos-slide img {
-  height: 50px;
-  margin: 0 40px;
-} */
-
-
-  
-  /* Carousel Container */
-
-
-@keyframes slide {
-  from {
-    transform: translateX(50%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.logos {
-    display: flex;
-  overflow: hidden;
-  padding: 60px 0;
-  background: white;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-.logos:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-}
-
-.logos:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-}
-
-.logos:hover .logos-slide {
-  /* animation-play-state: paused; */
-}
-
-.logos-slide {
-  display: flex;
-  gap: 5rem;
-  animation: 20s slide infinite linear;
-}
-
-
-.logos-slide img {
-  height: 50px;
-  margin: 0 40px;
-}
-
-@media screen and (max-width: 770px) {
-    
-.logos-slide {
-    display: flex;
-    gap: 5rem;
-    animation: 30s slide infinite linear;
-  }
-  
-}
-
-/* 
-==========
 Speakers
 ==========
  */
@@ -668,3 +541,4 @@ Speakers
     width: 100%;
   }
   
+

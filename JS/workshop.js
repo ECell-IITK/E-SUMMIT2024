@@ -1,30 +1,36 @@
-
 /* 
 ==========
 workshops
 ==========
- */
-
-window.addEventListener('resize', function() {
-    if (window.innerWidth > 770) {
-        // Code for screen width more than 770px
-        console.log("The screen width is more than 770px");
-    } else {
-        // Code for screen width 770px or less
-        
+*/
+const carousalCoverFirst = document.querySelector('.carousel')
 const carousel = document.querySelector('.carousel-container');
 const quantity = document.querySelectorAll('.items').length;
 const items = document.querySelectorAll('.items')
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
+const carousalCoverSecond = document.querySelector('.carousel-container2');
 
+
+window.addEventListener('load', controlDisplay);
+window.addEventListener('resize', controlDisplay);
+
+function controlDisplay() {
+    
+
+
+// Check if viewport is greater than 500px
+const isWideScreen = window.innerWidth > 768;
+
+if (isWideScreen) {
+    carousalCoverSecond.style.display = "none";
 const indexing = (i) => {
-    let idx= i%quantity;
-    if(idx<0){
-        idx = idx*-1  
-    }else if (idx>0){
-        idx = 11-idx  
-    }else{
+    let idx = i % quantity;
+    if (idx < 0) {
+        idx = idx * -1;
+    } else if (idx > 0) {
+        idx = 11 - idx;
+    } else {
         idx = 0;
     }
     return idx;
@@ -37,72 +43,82 @@ const currentSlide = (items, idx) => {
     items[idx].classList.add('current')
 }
 
-let i =0;   
+let i = 0;   
 
-next.addEventListener('click', () => {
-    carousel.style.rotate = `${-(++i)*(360/quantity)}deg`;
+// Function to rotate the carousel continuously
+const rotateCarousel = () => {
+    carousel.style.transition = 'transform 0.5s ease';  // Add a smooth transition for rotation
+    carousel.style.transform = `rotate(${-(++i) * (360 / quantity)}deg)`;
 
-    let index = indexing(i)
-    currentSlide(items, index)
-
-
-});
-
-prev.addEventListener('click', () => {
-    carousel.style.rotate = `${-(--i)*(360/quantity)}deg`
-
-    let index = indexing(i)
-    currentSlide(items, index)
-
-     
-})
+    let index = indexing(i);
+    currentSlide(items, index);
+}
 
 
+    // Automatic infinite rotation
+    setInterval(rotateCarousel, 3000);  // Rotate every 3 seconds
 
+    next.addEventListener('click', () => {
+        rotateCarousel();
+    });
 
-// swipe
-let startX = 0;
-let startY = 0;
-let endX = 0;
-let endY = 0;
+    prev.addEventListener('click', () => {
+        carousel.style.transition = 'transform 0.5s ease';
+        carousel.style.transform = `rotate(${(--i) * (360 / quantity)}deg)`;
 
-// Element to detect swipe on
-const swipeArea = document.querySelector('.carousel-container');
+        let index = indexing(i);
+        currentSlide(items, index);
+    });
 
-swipeArea.addEventListener("touchstart", (event) => {
-  startX = event.touches[0].clientX;
-  startY = event.touches[0].clientY;
-});
+    // swipe
+    let startX = 0;
+    let startY = 0;
+    let endX = 0;
+    let endY = 0;
 
-swipeArea.addEventListener("touchmove", (event) => {
-  // Prevent default scrolling during swipe
-  event.preventDefault();
-});
+    // Element to detect swipe on
+    const swipeArea = document.querySelector('.carousel-container');
 
-swipeArea.addEventListener("touchend", (event) => {
-  endX = event.changedTouches[0].clientX;
-  endY = event.changedTouches[0].clientY;
+    swipeArea.addEventListener("touchstart", (event) => {
+        startX = event.touches[0].clientX;
+        startY = event.touches[0].clientY;
+    });
 
-  const diffX = endX - startX;
-  const diffY = endY - startY;
+    swipeArea.addEventListener("touchmove", (event) => {
+        // Prevent default scrolling during swipe
+        event.preventDefault();
+    });
 
-  // Determine the direction
-  if (Math.abs(diffX) > Math.abs(diffY)) {
-    if (diffX > 0) {
-      console.log("Swipe Right");
-    } else {
-      console.log("Swipe Left");
-    }
-  } else {
-    if (diffY > 0) {
-      console.log("Swipe Down");
-    } else {
-      console.log("Swipe Up");
-    }
-  }
-});
+    swipeArea.addEventListener("touchend", (event) => {
+        endX = event.changedTouches[0].clientX;
+        endY = event.changedTouches[0].clientY;
 
+        const diffX = endX - startX;
+        const diffY = endY - startY;
 
-    }
-});
+        // Determine the direction
+        if (Math.abs(diffX) > Math.abs(diffY)) {
+            if (diffX > 0) {
+                console.log("Swipe Right");
+                rotateCarousel();  // Manually trigger carousel rotation on swipe right
+            } else {
+                console.log("Swipe Left");
+                carousel.style.transition = 'transform 0.5s ease';
+                carousel.style.transform = `rotate(${(--i) * (360 / quantity)}deg)`;
 
+                let index = indexing(i);
+                currentSlide(items, index);
+            }
+        } else {
+            if (diffY > 0) {
+                console.log("Swipe Down");
+            } else {
+                console.log("Swipe Up");
+            }
+        }
+    });
+} else {
+    carousalCoverFirst.style.display = "none";
+
+}
+}

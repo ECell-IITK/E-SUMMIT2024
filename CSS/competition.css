@@ -125,8 +125,8 @@ align-items: center;
     justify-content: center;
     width: 100px; /* Equal width */
     height: 100px; /* Equal height */
-    background-color: #430945; /* Light background */
-    border: 1px solid #ccc; /* Border for visibility */
+    background-color: #430945; 
+    border: 1px solid #ccc;
     border-radius: 8px; /* Optional: Rounded corners */
     cursor: pointer;
     text-align: center;
@@ -170,6 +170,7 @@ align-items: center;
       #screen p{
         color: black;
       }
+      
       
   }
 

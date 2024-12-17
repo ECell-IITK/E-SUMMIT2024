@@ -1,63 +1,78 @@
-/* Services container - allowing vertical scrolling */
 #services {
   margin: 0;
-  height: 100vh; /* Height of the viewport */
-  overflow-y: auto; /* Enable vertical scrolling inside the container */
+  overflow-y: auto; 
   position: relative;
   background-color: transparent;
-  overflow-x: hidden;
   -ms-overflow-style: none; 
+  display: flex;
+  text-align: center;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: column;
 
 } 
 #services::-webkit-scrollbar {
   display: none;
 }
 
-#services h1{
-  position: absolute;
-  top:2rem;
-  left: 50%;
-  transform: translateX(-50%);
+
+.card{
+  border: none;
 }
-.card_container {
-  height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-behavior: smooth;
+
+.service-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  padding: 16px;
+  gap: 10%;
+}
+.service-grid-item {
+  
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 70vh;
+  /* background-image: url(../images/About_1.svg); */
+
+
+}
+
+/* Responsive layout for mobile (1 column) */
+@media (max-width: 768px) {
+  .service-grid-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+    gap: 2% ;
+  }
+  .service-grid-item {
+  
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 50vh;
+    /* background-image: url(../images/About_1.svg); */
+  
+  
+  }
   
 }
 
-/* Service card styling */
+
+
+
+
 .cardM {
-  background-image: url(../images/About_1.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.3s ease; 
-  position: absolute;
-  z-index: 100;
-  text-align: center;
 }
 .cardL{
-  border-radius: 16px;
-  width: 30%;
-  height: 80%;
-  scale: 0.8;
-  position: absolute;
-  left: 0;
-  background-image: url(../images/About_1.svg);
+
   background-repeat: no-repeat;
   background-size: contain;
 }
  .cardR{
-  border-radius: 16px;
-  width: 30%;
-  height: 80%;
-  scale: 0.8;
-  position: absolute;
-  right: 0;
-  background-image: url(../images/About_1.svg);
+  
   background-repeat: no-repeat;
-  background-size: contain;}
+  background-size: contain;
+}

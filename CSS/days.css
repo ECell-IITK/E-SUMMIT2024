@@ -4,8 +4,7 @@
         grid-template-columns: 1fr;
         position: absolute;
         z-index: 2000;
-        top: 70%; 
-
+bottom: 10%;
         /* left: 10%;   */
       }
     .days_parent {
