@@ -6,7 +6,7 @@ workshops
 ==========
  */
  #workshops{
-    height: 100vh;
+    height: 98vh;
     overflow: hidden;
     padding-bottom: 2rem;
 
@@ -17,16 +17,6 @@ workshops
     position: relative;
 
  }
-#workshops button{
-    background: linear-gradient(145deg, #ffffff, #d1d1d1);
-    border: none;
-    border-radius: 20px;
-    color: #333;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    transition: all 0.3s ease;}
-
 
 .current{
     transform: scale(1.2);
@@ -102,7 +92,10 @@ workshops
  }
    
  @media screen and (max-width: 500px) {
-   
+  #workshops{
+    height: 80vh;
+
+ }
  .controls{
     position: absolute;
     top: 15%;
@@ -126,71 +119,3 @@ workshops
  }
  }
 
- 
-
- /* mobile Viw */
- .carousel-container2 {
-    overflow-x: hidden;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-  }
-
-  .carousel2 {
-    display: flex;
-    gap: 20px;
-    overflow-x: hidden;
-    animation: scroll 4s linear infinite;
-  }
-
-  .carousel-card {
-height: 20vh;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-overflow: hidden;
-cursor: pointer;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.carousel-card img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-}
-
-
-  .carousel-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
-
-
-  @media (max-width: 768px) {
-    #workshops{
-        height: auto;
-        overflow: hidden;
-        padding-bottom: 2rem;
-      }
-    
-    .carousel-card {
-      flex: 0 0 50%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .carousel-card {
-      flex: 0 0 100%;
-      }
-  }

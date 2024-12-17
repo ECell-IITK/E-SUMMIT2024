@@ -60,7 +60,8 @@
   --line-height-tight: 1.2;    /* Tight spacing */
   --line-height-normal: 1.5;   /* Default line spacing */
   --line-height-loose: 1.75;   /* Loose spacing */
-
+  --line-height-extra-loose:2;   /* Extra Loose spacing */
+    
 
   /* Letter Spacing */
   --letter-spacing-tight: -0.02em; /* Slightly condensed */
@@ -125,7 +126,7 @@ h2,
 h3,
 h4{
     text-transform: uppercase;
-    letter-spacing: var(--spacing);
+    /* letter-spacing: var(--spacing); */
     line-height:1.5;
     margin-bottom:1rem;
 }
@@ -169,11 +170,17 @@ p{
         font-weight: var(--font-weight-bold);
     }
     h3{
-        font-size: var(--font-size-medium);
+        font-family: var(--font-primary3);
+        font-size: var(--font-size-xl);
         font-weight: var(--font-weight-medium);
+        color: var(--clr-white);
+
     }
     h4{
+        font-family: var(--font-montserrat);
         font-size: 1rem;
+        line-height: var(--line-height-normal);
+        color: var(--clr-white);
     }
     body{
         font-size: 1rem;
@@ -182,7 +189,6 @@ p{
     h2,
     h3,
     h4{
-        line-height: 1;
     }
     p{
         font-size: var(--font-size-base);
@@ -191,6 +197,8 @@ p{
     font-family: var( --font-secondary1);
 
     }
+
+    
     
 }
 /* 

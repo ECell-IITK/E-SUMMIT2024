@@ -19,11 +19,7 @@ function controlDisplay() {
     
 
 
-// Check if viewport is greater than 500px
-const isWideScreen = window.innerWidth > 768;
 
-if (isWideScreen) {
-    carousalCoverSecond.style.display = "none";
 const indexing = (i) => {
     let idx = i % quantity;
     if (idx < 0) {
@@ -117,8 +113,4 @@ const rotateCarousel = () => {
             }
         }
     });
-} else {
-    carousalCoverFirst.style.display = "none";
-
-}
-}
+} 
