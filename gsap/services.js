@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const cardContainers = document.querySelectorAll(".card_container");
-  cardContainers.forEach((section, index) => {
-    const card = section.querySelector(".service_card");
+  const cardContainers = document.querySelector(".card_container");
+    const card = cardContainers.querySelector(".cardM");
 
     gsap.fromTo(
       card,
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         x: "0vw",
         y: "0vh",
         scrollTrigger: {
-          trigger: section,
+          trigger: cardContainers,
           scroller: "#services", 
           start: "center center",   
           end: "bottom center",   
@@ -34,5 +33,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     );
-  });
 });

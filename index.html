@@ -85,21 +85,7 @@
 
     </div>
 </nav>
-<div class="days" id="days">
-  <div class="days_parent" >
-    
-    <div class="days_child days_child1" id="days" days-target = "Days">
-      <img src="" alt="">
-    </div>
-    <div class="days_child days_child2" id="hours" days-target = "Hours">
-    </div>
-    <div class="days_child days_child3" id="minutes" days-target = "Minutes">
-    </div>
-    </div>
-    <div class="days_text">
-      TO GO
-    </div>
-</div>
+
 
     <div id="fixed_section" style="background-image: url(./images/bg_light_purple.svg);">  </div>
     <div id="scroll-slide">
@@ -126,9 +112,23 @@
       <div class="typeface-packet" >
         <img class="typeface" src="images/2024_landing/Typephase.svg" alt="" srcset="" loading="lazy" >
       </div>
-    
+     
   
-        
+      <div class="days">
+        <div class="days_parent" >
+          
+          <div class="days_child days_child1" id="days" days-target = "days">
+            <img src="" alt="">
+          </div>
+          <div class="days_child days_child2" id="hours" days-target = "Hours">
+          </div>
+          <div class="days_child days_child3" id="minutes" days-target = "Minutes">
+          </div>
+          </div>
+          <div class="days_text">
+            TO GO
+          </div>
+      </div>
 
 </section>
 <!-- end of section -->
@@ -264,12 +264,38 @@
 
     <!-- services -->
   
-    <div id="services">
-      <div class="card_container">      <div class="cardL"></div>
-      <div class="service_card"></div>
-    <div class="cardR"></div>
+    <section id="services" >
+      <h1>Services</h1>
+      <div class="card_container">
+        <div class="cardL ">
+          <div class="card bg-transparent" style="width: 100%; height: 100%;">
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: stretch; height: 100%;">
+              <!-- <h5 class="card-title" style="margin: 0;">Card title</h5> -->
+              <p class="card-text" style="margin: 0;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary" style="align-self: center;">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      <div class="cardM ">
+        <div class="card bg-transparent" style="width: 100%; height: 100%;">
+          <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: stretch; height: 100%;">
+            <!-- <h5 class="card-title" style="margin: 0;">Card title</h5> -->
+            <p class="card-text" style="margin: 0;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" style="align-self: center;">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    <div class="cardR ">
+      <div class="card bg-transparent" style="width: 100%; height: 100%;">
+        <div class="card-body" style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: stretch; height: 100%;">
+          <!-- <h5 class="card-title" style="margin: 0;">Card title</h5> -->
+          <p class="card-text" style="margin: 0;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary" style="align-self: center;">Go somewhere</a>
+        </div>
+      </div>
     </div>
     </div>
+    </section>
     
 
 
@@ -315,27 +341,6 @@
           </div>
         </div> -->
 
-            <div class="logos">
-              <div class="logos-slide">
-                <a href="https://www.3m.com/" target="_blank"><img src="./logos/3m.svg" alt="3M" /></a>
-                <a href="https://www.barstoolsports.com/store" target="_blank"><img src="./logos/barstool-store.svg" alt="Barstool Store" /></a>
-                <a href="https://www.budweiser.com/" target="_blank"><img src="./logos/budweiser.svg" alt="Budweiser" /></a>
-                <a href="https://www.google.com/" target="_blank"><img src="./logos/buzzfeed.svg" alt="BuzzFeed" /></a>
-                <a href="https://www.forbes.com/" target="_blank"><img src="./logos/forbes.svg" alt="Forbes" /></a>
-                <a href="https://www.macys.com/" target="_blank"><img src="./logos/macys.svg" alt="Macy's" /></a>
-                <a href="https://www.menshealth.com/" target="_blank"><img src="./logos/menshealth.svg" alt="Men's Health" /></a>
-                <a href="https://shop.mrbeast.com/" target="_blank"><img src="./logos/mrbeast.svg" alt="MrBeast" /></a>
-                <a href="https://www.3m.com/" target="_blank"><img src="./logos/3m.svg" alt="3M" /></a>
-                <a href="https://www.barstoolsports.com/store" target="_blank"><img src="./logos/barstool-store.svg" alt="Barstool Store" /></a>
-                <a href="https://www.budweiser.com/" target="_blank"><img src="./logos/budweiser.svg" alt="Budweiser" /></a>
-                <a href="https://www.google.com/" target="_blank"><img src="./logos/buzzfeed.svg" alt="BuzzFeed" /></a>
-                <a href="https://www.forbes.com/" target="_blank"><img src="./logos/forbes.svg" alt="Forbes" /></a>
-                <a href="https://www.macys.com/" target="_blank"><img src="./logos/macys.svg" alt="Macy's" /></a>
-                <a href="https://www.menshealth.com/" target="_blank"><img src="./logos/menshealth.svg" alt="Men's Health" /></a>
-                <a href="https://shop.mrbeast.com/" target="_blank"><img src="./logos/mrbeast.svg" alt="MrBeast" /></a>
-              </div>
-            </div>
-        
       
         
      </section>
@@ -389,7 +394,7 @@
         <footer class="footer" >
           <div class="footer__addr">
               <h1 class="footer__logo">
-                  <img src="../images/Footer/ecell-logo-with-name.png" alt="" srcset="" loading="lazy">
+                  <img src="./images/Footer/ecell-logo-with-name.svg" alt="" srcset="" loading="lazy">
               </h1>
 
               <!-- <h2>Address</h2> -->
@@ -404,7 +409,7 @@
                   <a class="footer__btn" href="mailto:esummit@ecelliitk.com">Email Us</a>
               </address>
 
-              <img src="./images/Footer/footerKaImage.png" alt="">
+              <img src="./images/Footer/footerKaImage.svg" alt="">
               <!-- <address>
                   Room No G2,
                   Imagineering Laboratory
