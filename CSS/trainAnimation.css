@@ -1,0 +1,83 @@
+@media screen and (min-width: 500px) {
+    
+
+ #layerTrain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+ .trainAnimation {
+    top: 30%;
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+  }
+  
+  .train-box {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-timing-function: ease-in-out;
+  }
+  
+ 
+  
+  .train-2 {
+    width: 20%;
+    opacity: 0;
+    background-image: url(../images/2024_landing/metro.svg);
+
+    animation: appearAndMove 10s infinite;
+    background-size: contain;
+  }
+  .train-1 {
+    width: 10%;
+    animation: moveAndDisappear 10s infinite;
+    background-image: url(../images/2024_landing/steam.svg);
+  }
+  
+  /* Keyframes for box-1 (Steam Train) */
+  @keyframes moveAndDisappear {
+    0% {
+      left: 0;
+      opacity: 1;
+    }
+    45%{
+        left: 50%;
+        opacity: 1;
+    }
+    50% {
+      left: 50vw;
+      opacity: 0;
+    }
+    100% {
+      left: 55vw;
+      opacity: 0;
+    }
+  }
+  
+  /* Keyframes for box-2 (Metro Train) */
+  @keyframes appearAndMove {
+    0% {
+      left: 50vw;
+      opacity: 0;
+    }
+    45%{
+        left: 50vw;
+        opacity: 0;
+    }
+    50% {
+      left:50vw;
+      opacity: 1;
+    }
+    100% {
+      left: 100vw;
+      opacity: 1;
+    }
+  }
+
+}
