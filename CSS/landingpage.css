@@ -7,24 +7,24 @@ landing_page
  */
  #landing_page{
     position: relative;
-    min-height:115vh;
+    min-height:125vh;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     align-items:flex-end;
     background: linear-gradient(180deg, #E786FF 0%, #FBA9FD 100%);
     overflow: hidden;
- }
 
+ }
 
  .images-section #Layerw{
 
 }
  #landing_page img{
-    
     position: absolute;
     width: 100%;
     pointer-events: none;
+
  }
 
 
