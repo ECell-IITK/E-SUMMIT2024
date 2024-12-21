@@ -7,7 +7,7 @@ landing_page
  */
  #landing_page{
     position: relative;
-    min-height:125vh;
+    min-height:115vh;
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
